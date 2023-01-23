@@ -2,14 +2,11 @@
 string [] CreateArray1 (int size)
 {
     string [] Array1 = new string[size];
-    
     for(int i = 0; i < size; i++)
     {
-        
-        Console.Write($"Enter text for the {i+1}th element of the array: ");
-        Array1[i] = Console.ReadLine(); 
+        Console.Write($"Enter text for the {i+1}th element of the array: + ");
+        Array1[i] = String.Empty + Console.ReadLine(); 
     }
-    
     return Array1;
 }
 
@@ -38,18 +35,6 @@ string [] CreateArrayThreeSymbol (string[] Array1)
     }
     return Array2;
 }
-
-void ShowArray2 (string[] Array2)
-
-{
-    for(int i = 0; i < Array2.Length; i++)
-        
-        Console.Write("[" + Array2[i] + "]" + " " );
-
-    Console.WriteLine();
-}
-
-
 
 Console.Write("Enter the number of words: ");
 int n = Convert.ToInt32(Console.ReadLine());
